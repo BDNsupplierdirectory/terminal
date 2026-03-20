@@ -12184,5 +12184,121 @@ bdnFetchFeed();
   switchTool(0);
 })();
 </script>
+  <style>
+  /* Modal Overlay to block the screen */
+  #bdn-legal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.95); /* Dark slate marine background */
+    backdrop-filter: blur(5px);
+    z-index: 99999; /* Forces it to the very top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  /* The Modal Box */
+  #bdn-legal-modal {
+    background: #1e293b;
+    border: 1px solid #3b82f6;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    color: #f8fafc;
+  }
+
+  #bdn-legal-modal h2 {
+    margin-top: 0;
+    color: #60a5fa;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 10px;
+  }
+
+  #bdn-legal-scrollbox {
+    max-height: 40vh;
+    overflow-y: auto;
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #cbd5e1;
+    border: 1px solid #334155;
+  }
+
+  /* The Agree Button */
+  #bdn-agree-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+  }
+
+  #bdn-agree-btn:hover {
+    background: #2563eb;
+  }
+</style>
+
+<div id="bdn-legal-overlay">
+  <div id="bdn-legal-modal">
+    <h2>Disclaimer & Terms of Use</h2>
+    <p>Before accessing the Intelligence Terminal, please review and accept our terms.</p>
+    
+    <div id="bdn-legal-scrollbox">
+      <strong>1. Informational Purposes Only</strong><br>
+      The calculators, market data, default variables, and outputs provided within this Terminal are strictly for estimation, simulation, and educational purposes. They do not constitute official financial, legal, engineering, or procurement advice.<br><br>
+      
+      <strong>2. Assumption of Risk</strong><br>
+      You assume all risk associated with the use of these tools. You are solely responsible for independently verifying all metrics, costs, and C-NLOPB compliance data before relying on them for official bids, proposals, or contracts.<br><br>
+      
+      <strong>3. Limitation of Liability</strong><br>
+      Under no circumstances shall BDN Supplier Directory be held liable for any direct, indirect, or consequential damages—including lost profits, lost contracts, or bidding errors—resulting from the use of this software.<br><br>
+      
+      <strong>4. Intellectual Property</strong><br>
+      The logic, algorithms, and interface of this Terminal are proprietary. Unauthorized copying, scraping, or reverse engineering is strictly prohibited.
+    </div>
+
+    <button id="bdn-agree-btn">I Agree & Accept</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const overlay = document.getElementById('bdn-legal-overlay');
+    const agreeBtn = document.getElementById('bdn-agree-btn');
+
+    // Check if the user has already agreed in the past
+    if (localStorage.getItem('bdn_terminal_accepted') === 'true') {
+      overlay.style.display = 'none'; // Hide modal if already accepted
+    } else {
+      // Lock the background from scrolling while modal is open
+      document.body.style.overflow = 'hidden'; 
+    }
+
+    // When they click the button
+    agreeBtn.addEventListener('click', function() {
+      // Save their consent to the browser
+      localStorage.setItem('bdn_terminal_accepted', 'true');
+      // Hide the modal
+      overlay.style.display = 'none';
+      // Unlock the background scroll
+      document.body.style.overflow = 'auto';
+    });
+  });
+</script>
 </body>
 </html>
