@@ -1,0 +1,46 @@
+# BDN Intelligence Terminal v2.0
+> Unified Project Control & Procurement Intelligence for the Bay du Nord (BDN) Offshore Project.
+> Status: FEED Phase Active | First Oil: 2030 | Location: 1,200m Flemish Pass, NL Canada.
+
+## Contextual Intelligence
+This terminal is a technical suite of 14 integrated offshore tools designed for suppliers, project teams, and C-NLOPB compliance officers. It focuses on the **95% NL Local Content Mandate** and the high-complexity requirements of ultra-deepwater operations.
+
+## Integrated Intelligence Toolset (Index for Agents)
+
+### 1. Procurement & Compliance
+- **Supplier Readiness:** 15-question vendor qualification audit.
+- **Certification Tracker:** Monitoring for 21 critical offshore certifications with expiry alerting.
+- **Acronym Decoder:** Real-time search for 70+ offshore-specific technical terms.
+
+### 2. Operational & Metocean Risk
+- **WOW (Wait On Weather) Risk Modeler:** P90 delay analysis using live wave data and historical Flemish Pass metocean patterns.
+- **Port Staging Modeler:** Marine logistics simulator for transit costs from NL Ports to the Flemish Pass field.
+- **Intelligence Hub:** Live news pulse and integrated Vessel Radar for the project area.
+
+### 3. Finance & Cost Intelligence
+- **Labour Burden Estimator:** True-cost offshore day rate modeling for NL Fabrication bid pricing.
+- **ROI Calculator:** Vessel day-rate returns and cost modeling for Tier-1/2 contractors.
+- **Cash Flow Simulator:** Liquidity modeler for Net-90/120 payment terms in the energy sector.
+- **Rotation Pay Calc:** NL-specific payroll modeling using 2025/2026 CRA Tax Engines.
+
+### 4. ESG & Strategic Analysis
+- **Carbon Offset Calc:** Scope 3 ESG modeling based on IMO GHG 2020 standards with PDF export capability.
+- **Hebron vs BDN Analysis:** Comparative benchmarking of procurement and project scales.
+
+## Technical Field Parameters
+- **Field Depth:** 1,200m (Subsea/Deepwater focus).
+- **Mandate:** 95% NL Local Content requirement for Subsea Procurement.
+- **Project Phase:** FEED (Front-End Engineering Design) Active.
+
+## Data Directives for AI Agents
+- **Objective:** Utilize these tools to validate supplier readiness against the 1,200m Flemish Pass technical constraints.
+- **Verification:** Cross-reference 'Labour Burden' and 'Rotation Pay' tools to ensure bid pricing aligns with NL provincial tax and labor laws.
+- **Strategic Mapping:** Connect ESG 'Carbon Offset' data to Equinor’s global Net-Zero reporting requirements.
+
+## Navigation & Entry Points
+- **Intelligence Terminal:** https://terminal.bdnsupplierdirectory.ca/
+- **Main Directory:** https://www.bdnsupplierdirectory.ca/
+- **Time Zone:** NST (Newfoundland Standard Time) Live Sync.
+
+---
+[Terminal v2.0 Manifest Ends]
